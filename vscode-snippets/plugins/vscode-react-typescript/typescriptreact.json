@@ -1,0 +1,19 @@
+{
+  "RFC from Next.js naming": {
+    "prefix": "tsnfc",
+    "body": [
+      "interface ${2:${TM_FILENAME_BASE/(\\w+)-(\\w+)/${1:/capitalize}${2:/capitalize}/}Props} {",
+      "  ${4:/* Define your props here */}",
+      "}",
+      "",
+      "export function ${1:${TM_FILENAME_BASE/(\\w+)-(\\w+)/${1:/capitalize}${2:/capitalize}/}}({ ${3} }: ${2}) {",
+      "  return (",
+      "    <div>",
+      "      ${1}",
+      "    </div>",
+      "  );",
+      "}"
+    ],
+    "description": "RFC with Interface generated from Next.js file naming convention <my-component.tsx> --> <export function MyComponent(){}>"
+  }
+}
